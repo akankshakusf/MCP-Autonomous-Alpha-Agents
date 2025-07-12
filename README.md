@@ -1,7 +1,8 @@
 # 🧠 Autonomous Alpha Agents Trading Simulator
 
 > **A Multi-Agent, Multi-MCP, LLM-Powered Stock Trading System**
-> App link: https://huggingface.co/spaces/akankshakusf/autonomous-trading-sim
+> 
+## App link: https://huggingface.co/spaces/akankshakusf/autonomous-trading-sim
 ---
 
 <img src="https://github.com/akankshakusf/MCP-Autonomous-Alpha-Agents/blob/master/arch%201.svg" width="70%" />
