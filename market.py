@@ -14,10 +14,35 @@ polygon_plan = os.getenv("POLYGON_PLAN")
 is_paid_polygon = polygon_plan == "paid"
 is_realtime_polygon = polygon_plan == "realtime"
 
+# def is_market_open() -> bool:
+#     client = RESTClient(polygon_api_key)
+#     market_status = client.get_market_status()
+#     return market_status.market == "open"
+
+# def is_market_open() -> bool:
+#     if os.environ.get("RUN_EVEN_WHEN_MARKET_IS_CLOSED", "false").strip().lower() == "true":
+#         return True
+#     try:
+#         client = RESTClient(polygon_api_key)
+#         market_status = client.get_market_status()
+#         return market_status.market == "open"
+#     except Exception as e:
+#         print(f"Polygon error: {e}. Defaulting to open.")
+#         return True
 def is_market_open() -> bool:
-    client = RESTClient(polygon_api_key)
-    market_status = client.get_market_status()
-    return market_status.market == "open"
+    val = os.environ.get("RUN_EVEN_WHEN_MARKET_IS_CLOSED", "false").strip().lower()
+    print(f"[DEBUG] is_market_open() - RUN_EVEN_WHEN_MARKET_IS_CLOSED: {val}")
+    if val == "true":
+        print("[DEBUG] is_market_open() returns True due to env override.")
+        return True
+    try:
+        client = RESTClient(polygon_api_key)
+        market_status = client.get_market_status()
+        return market_status.market == "open"
+    except Exception as e:
+        print(f"Polygon error: {e}. Defaulting to open.")
+        return True
+
 
 def get_all_share_prices_polygon_eod() -> dict[str, float]:
     client = RESTClient(polygon_api_key)
