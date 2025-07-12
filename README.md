@@ -56,16 +56,6 @@ It enables agents to research, decide, execute trades, and send notifications in
 
 ---
 
-## 🖼️ Architecture Diagram
-
-- **Solid lines:** Successful operation flow  
-- **Dashed lines:** Error/exception handling and user feedback  
-- **Green:** Success path  
-- **Red:** Error/exception messages  
-- **MCP blocks:** Modular protocol servers for decoupled, scalable design
-
----
-
 ## 📦 Tech Stack
 
 - **Python** (Gradio, FastAPI, Pydantic, asyncio, sqlite)
@@ -75,56 +65,22 @@ It enables agents to research, decide, execute trades, and send notifications in
 - **Pushover** – Push notification microservice
 
 ---
+## 💼 How Companies Can Use This System
 
-## 🧑‍💻 How to Run
+1. **Automated Portfolio Management:**  
+   Deploy autonomous agent teams to manage real or simulated investment portfolios, allowing for continuous, data-driven trading decisions across global markets.
 
-1. **Clone the repo** and install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. **Rapid Prototyping of Trading Strategies:**  
+   Experiment with new trading logic, agent behaviors, or market data sources in a modular, safe environment before rolling out to production.
 
-2. **Set environment variables** in a `.env` file:
-    ```
-    POLYGON_API_KEY=...
-    POLYGON_PLAN=...
-    PUSHOVER_USER=...
-    PUSHOVER_TOKEN=...
-    # (other keys as needed)
-    ```
+3. **Resilient, Auditable Trade Execution:**  
+   Leverage the built-in error handling and logging for compliance, real-time monitoring, and robust recovery from system or third-party failures.
 
-3. **Launch the UI:**
-    ```bash
-    python app.py
-    # Or use 'uv' if set up for hot-reload
-    ```
+4. **Intelligent Decision Support:**  
+   Integrate the platform into existing finance operations to provide recommendations or real-time “what-if” analysis using AI-powered agents.
 
-4. **Interact via web interface** or programmatic API.
+5. **Customizable Multi-Agent Simulations:**  
+   Model and test different trader personas, risk policies, or notification flows for research, training, or investor education—simply by swapping agent logic or microservices.
 
 ---
 
-## 💡 Features
-
-- LLM-powered agentic workflow
-- Modular, observable, and scalable with MCP servers
-- Complete end-to-end error handling (market, price, account, notification, or system failures)
-- Realistic user feedback
-- Can be extended with new agents or data sources
-
----
-
-## 📎 Diagram Attribution
-
-- Architecture diagram inspired by [@Aurimas_Gr](https://www.linkedin.com/in/aurimas-griciunas/), reimagined for this project.
-
----
-
-## 📣 Connect
-
-Built by **[Your Name]**  
-- [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)  
-- [GitHub](https://github.com/YOUR-GITHUB)  
-
----
-
-> **If you like this project, give it a star! ⭐️**  
-> For questions, open an issue or connect with me on LinkedIn.
