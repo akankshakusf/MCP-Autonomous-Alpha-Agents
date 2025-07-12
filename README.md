@@ -4,7 +4,7 @@
 
 ---
 
-<img src="https://github.com/akankshakusf/MCP-Autonomous-Alpha-Agents/blob/master/arch%201.svg" width="100%" />
+<img src="https://github.com/akankshakusf/MCP-Autonomous-Alpha-Agents/blob/master/arch%201.svg" width="70%" />
 
 ---
 
