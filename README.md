@@ -4,7 +4,7 @@
 
 ---
 
-<img src="https://github.com/akankshakusf/Autonomous-MultiAgent-AWS-Incident-Jira-Automation/blob/main/images/arch%202.png" width="100%" />
+<img src="https://github.com/akankshakusf/MCP-Autonomous-Alpha-Agents/blob/master/arch%201.svg" width="100%" />
 
 ---
 
